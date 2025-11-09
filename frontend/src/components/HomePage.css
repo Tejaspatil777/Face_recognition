@@ -1,0 +1,79 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e0e0e0, #b0c4de); /* Gray and Blue gradient */
+  padding: 20px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333; /* Darker text for better contrast */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px; /* Increased max-width for larger screens */
+}
+
+.home-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  width: 100%; /* Make buttons fill their container */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline from Link */
+  color: white;
+}
+
+.home-button:hover {
+  background-color: #4CAF50; /* Green on hover (you can change) */
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Increased shadow on hover*/
+}
+
+.make-attendance {
+  background-color: #007BFF; /* Blue */
+}
+.make-attendance:hover{
+   background-color: #0056b3;
+}
+
+.check-attendance {
+  background-color: #6C757D; /* Gray */
+}
+.check-attendance:hover{
+    background-color:#565e64;
+}
+
+.enroll-student {
+  background-color: #28A745; /* Green */
+}
+.enroll-student:hover{
+    background-color:#218838;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 2rem;
+  }
+  .home-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+  .button-container {
+    max-width: 100%; /* Full width on small screens */
+  }
+}
